@@ -67,3 +67,30 @@ img {
     margin-bottom: 20px;
 }
 
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
+.projects {
+   
+}
+
+.announcement-sidebar {
+    
+}
+
+.trending-sidebar {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
