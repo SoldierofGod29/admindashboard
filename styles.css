@@ -78,7 +78,7 @@ img {
     grid-template-rows: repeat(2, auto);
     box-shadow: 0px 5px 5px rgb(211, 195, 195);
     margin-top: 20px;
-    margin-bottom: 30px;
+    
 }
 
 .header-profile {
@@ -179,8 +179,9 @@ input[type="search"] {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
-    margin-left: 15px;
     gap: 25px;
+    background-color: rgb(199, 197, 197);
+    padding: 30px;
 }
 
 .body > h4 {
@@ -205,11 +206,12 @@ input[type="search"] {
 .project-card {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 0.2fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: white;
+    align-content: center;
+    padding: 40px;
 }
 
 .project-card > h4 {
@@ -242,7 +244,29 @@ input[type="search"] {
 .announcement-sidebar {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 50px;
 }
+
+.announcement-content:nth-child(-n + 2){
+    border-style: solid;
+    border-color: rgb(199, 197, 197);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 15px;
+}
+
+.announcement-content > h5 {
+    font-size: 18px;
+}
+
 
 .body > h4:nth-last-of-type() {
     grid-column: 2 / 2;
