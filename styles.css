@@ -3,8 +3,14 @@
     padding: 0;
 }
 
+@font-face {
+        font-family: ITC Avant Garde LT Medium;
+        src: url(./ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf);
+    }
+
 html,
 body {
+    font-family: ITC Avant Garde LT Medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100%;
 }
 
@@ -150,7 +156,7 @@ input[type="search"] {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .header-nav > ul{
@@ -193,6 +199,7 @@ input[type="search"] {
 .body > h4:first-of-type {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
+    font-size: 20px;
 }
 
 .projects {
@@ -245,6 +252,7 @@ input[type="search"] {
 .body > h4:nth-of-type(2) {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
+    font-size: 20px;
 }
 
 .announcement-sidebar {
@@ -270,13 +278,14 @@ input[type="search"] {
 }
 
 .announcement-content > h5 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
-.body > h4:nth-last-of-type() {
+.body > h4:last-of-type {
     grid-column: 2 / 2;
     grid-row: 3 / 3;
+    font-size: 20px;
 }
 
 .trending-sidebar {
